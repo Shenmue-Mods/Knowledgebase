@@ -1,3 +1,5 @@
+# Dreamcast Information
+
 ### Subpages:
 
 * [**PVR Graphic Format**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast-Information/PVR_Graphic_Format.md)
@@ -5,7 +7,7 @@
 
 ***
 
-# Programming and Research
+## Programming and Research
 
 * http://mc.pp.se/dc/
 * http://www.boob.co.uk/
@@ -27,12 +29,12 @@
 * http://yam.20to4.net/index.html
 * [Dreamcast development central](https://web.archive.org/web/20000301160150/http://www.consoledev.com/dcdev/index.html)
 
-# Development Tools
+## Development Tools
 
 * http://www.ludd.luth.se/~jlo/dc/
 * http://www.bucanero.com.ar/dreamcast/
 
-# Tools & Downloads
+## Tools & Downloads
 
 * [Blue Swirl](http://bswirl.kitsunet.org/)
 * http://consolecopyworld.com/dc/dc_utils.shtml
