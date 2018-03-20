@@ -1,0 +1,1 @@
+Any and all content presented in this respositery is presented for informational and educational purposes only. Commercial usage is expressly prohibited. Shenmue Mods claims no ownership of any code in this site (unless stated otherwise). You assume any and all responsibility for using this content responsibly. Shenmue Mods claims no responsibility or warranty.
