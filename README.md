@@ -35,6 +35,8 @@ Most of the pages have been written from [these](https://sites.google.com/site/s
 
 Github makes it easy to show who have contributed what, therefore in the future it won't be necessary to include the name/credits of the contributor.
 
+* Though, we may list here (in this readme) the Github usernames of the people who have contributed (at will) in this project.
+
 In case a page contains work of someone who isn't a contributor (of this repository, but their "outside" work is included here), then at the end of that page due credit is given.
 
 ***
