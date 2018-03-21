@@ -11,7 +11,9 @@
 * [Shenmue_IIx](https://github.com/Shenmue-Mods/Shenmue-Mods/tree/master/Shenmue_IIx)
 * [What's_Shenmue](https://github.com/Shenmue-Mods/Shenmue-Mods/tree/master/Whats_Shenmue)
 * [Links](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Links.md)
+
 ***
+
 #### Style Guide of Contributing:
 
 * Write as a **professional;** use precise language and convey information in the most *analytical* (step-by-step) and *crystal clear* way possible, to be easily understood by everyone.
