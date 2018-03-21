@@ -2,8 +2,8 @@
 
 ### Subpages:
 
-* [**PVR Graphic Format**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast-Information/PVR_Graphic_Format.md)
-* [**SPSD files**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast-Information/SPSD_files.md)
+* [**PVR Graphic Format**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast_Information/PVR_Graphic_Format.md)
+* [**SPSD files**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast_Information/SPSD_files.md)
 
 ***
 
