@@ -26,7 +26,7 @@ Here is how we can do it (using NULLDC & NULLDC VMUs as a reference):
 9. Close the VMU file and close VMU Explorer
 10. In the dumped *Shenmue II* ISO go to SCENE/03/QAXX
 11. Open up `mapinfo.bin` in a hex editor
-12. Remove the FLDD --|DOOR sector as stated in: [Remove colision data from maps]()
+12. Remove the FLDD --|DOOR sector as stated in: [Remove Collision Data](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Shenmue_II/Remove_Collision_Data.md)
 13. Save the file
 14. Compile the disc
 

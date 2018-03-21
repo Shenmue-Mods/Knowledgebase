@@ -1,6 +1,6 @@
 # Notebook Hacking
 
-This page will show you how to edit the notebook in Shenmue I. This process is the same for all versions of S1 including the BETA 0.400.
+This page will show you how to edit the notebook in *Shenmue I*. This process is the same for all versions of *S1* including the *BETA 0.400*.
 
 Instructions:
 

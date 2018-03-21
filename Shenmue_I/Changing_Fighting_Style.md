@@ -2,8 +2,8 @@
 
 **Steps:**
 
-1. Open the "1ST_READ.BIN" file in a hex editor.
-2. Search for "EN_%s.BIN".
+1. Open the `1ST_READ.BIN` file in a hex editor.
+2. Search for `EN_%s.BIN`.
 3. Find the ID reference that you want to change with another one.
 4. Find the relevant EN_XXX(X).BIN file [where "XXX(X)" is the ID of the fighting style that you want to use] in one of the area folders found in the path "DATA/SCENE/XX". Copy that file and paste it in the area folder that you want to load (required that in this area folder is the character that has been assigned with the fighting style of your choice).
 

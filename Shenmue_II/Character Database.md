@@ -4,4 +4,4 @@
 
 ***
 
-Credits: [Miles Prower](http://www.shenmuedojo.net/forum/viewtopic.php?f=4&t=45398) (Stuart Peacock)
+Credits to [Miles Prower](http://www.shenmuedojo.net/forum/viewtopic.php?f=4&t=45398) (from Shenmue Dojo).

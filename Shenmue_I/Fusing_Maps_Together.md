@@ -13,7 +13,8 @@ Notes:
 
 1. Open the mapinfo for both MA00 and JD00 in a hex editor.
 
-2. 1. /SCENE/03/MA00/mapinfo.bin; /SCENE/03/MA00/mapinfo.bin
+	* /SCENE/03/MA00/mapinfo.bin
+	* /SCENE/03/MA00/mapinfo.bin
 
 3. Delete all of the pre-ECAM hex code in JD00s mapinfo file.
 

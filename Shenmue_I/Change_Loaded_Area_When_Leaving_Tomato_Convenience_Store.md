@@ -5,7 +5,7 @@ When you remove the COLS data from The Tomato Convenience Store (DCBN), the warp
 If you walk through any of the walls, you will warp back into Dobuita (D000).
 
 To change which area you warp to, perform the following:
-*Note: this is written as if you have removed the COLS data from the mapinfo.bin. The hex placements will change if you didn't.*
+*Note: this is written as if you have removed the COLS data from the `mapinfo.bin`. The hex placements will change if you didn't.*
 
 Open up ROOT:/SCENEXX/DCBN/mapinfo.bin in a hex editor.
 

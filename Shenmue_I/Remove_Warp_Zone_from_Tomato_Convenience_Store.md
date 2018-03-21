@@ -2,7 +2,7 @@
 
 Even if you remove the COLS data from The Tomato Convenience Store, the warp zone still exists for the door and surrounding perimeter.
 
-Described here: [Change Loaded Area When Leaving Tomato Convenience Store]()
+Described here: [Change Loaded Area When Leaving Tomato Convenience Store](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Shenmue_I/Change_Loaded_Area_When_Leaving_Tomato_Convenience_Store.md)
 
 To remove the warp zone needs a lot of investigation, so an approachable hack is to swap the map with the Abe Candy Shop in Sakuragaoka.
 

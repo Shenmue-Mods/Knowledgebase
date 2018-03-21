@@ -119,4 +119,4 @@ Switch battle ID numbers (to start any battle you want, possibly?)
 Spar with Fuku again and again (should be pretty easy to find)
 Stop mandatory bedtime (a code which prevents the auto bed-time and lets you stay up all night)
 ```
-Credits to David Brown.
+Credits to [David Brown](http://www.mooncalfstudios.com/hazukilegacy/).

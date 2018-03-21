@@ -1,7 +1,7 @@
 # Change Title Screen's Debug Menu Data
 
-* Open the "1ST_READ.BIN" file with a hex editor.
-* Search (CTRL+F) for "PCHAF" [or go to (CTRL+G) offset `3AC358`].
+* Open the `1ST_READ.BIN` file with a hex editor.
+* Search (`CTRL+F`) for "PCHAF" [or go to (`CTRL+G`) offset `3AC358`].
 
 *Note*: You will see keywords with 4 characters each (e.g. D000, CHAF, KOTF, SYPF, NETJ and so on). - Each keyword represents an Area. Areas are folders, as found in SCENE/XX/ (where XX is a double digit number).
 

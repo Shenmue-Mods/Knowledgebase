@@ -1,8 +1,6 @@
 # How to Play Any Music Track in the Title Screen
 
-<p align="center"> **Tutorial how to play any music track**
-
-**in the title** (more precisely, the menu) **screen of Shenmue II.** </p>
+<p align="center"> <b>Tutorial how to play any music track in the title</b> (more precisely, the menu) <b>screen of Shenmue II</b> </p>
 
 ***
 
