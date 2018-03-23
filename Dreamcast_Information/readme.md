@@ -17,6 +17,7 @@
 * https://www.reddit.com/r/dreamcast/comments/1wh1zt/a_starting_list_for_developing_on_the_dreamcast/
 * http://hitmen.c02.at/html/dc.html
 * https://segaxtreme.net/forums/dreamcast-dev.37/
+* https://japanese-cake.livejournal.com/
 
 ### Misc.
 
