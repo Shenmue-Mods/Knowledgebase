@@ -14,7 +14,7 @@
 
 ### Style Guide of Contributing
 
-* Write as a **professional;** use precise language and convey information in the most *analytical* (step-by-step) and *crystal clear* way possible, to be easily understood by everyone.
+* Write as a **professional;** use precise language and convey information in the most *analytical* (step-by-step) and *crystal clear* way possible, to easily be understood by everyone.
 
   * Write *without ego*; that is, don't use the "I", but rather use the "you"/"we".
   * Write *without emotion*; make your text as "dry" as possible, don't use words as "Enjoy!" and avoid emoticons/emojis as much as possible.
