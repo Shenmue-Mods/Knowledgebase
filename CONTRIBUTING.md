@@ -4,7 +4,7 @@
 
 * [Fork Shenmue-Mods](https://github.com/Shenmue-Mods/Shenmue-Mods/fork).
 
-* Learn to use [git](http://git-scm.com), the version control system used by GitHub and the Julia project. Try a tutorial such as the one [provided by GitHub](http://try.GitHub.io/levels/1/challenges/1).
+* Learn to use [git](http://git-scm.com). Try a tutorial such as the one [provided by GitHub](http://try.GitHub.io/levels/1/challenges/1).
 
 * For more detailed tips, read the [submission guide](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/CONTRIBUTING.md#submitting-contributions) below.
 
