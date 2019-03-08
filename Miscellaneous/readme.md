@@ -1,9 +1,6 @@
 # Miscellaneous
 
-### Subpages:
+## Contents
 
-* [**In Search of the "シェンムー Plug-in"**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Miscellaneous/In_Search_of_Shenmue_Plugin.md)
-* [**Shenmue I Quests**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Miscellaneous/Shenmue_I_Quests.md)
-
-***
-
+* [In Search of the "シェンムー Plug-in"](In_Search_of_Shenmue_Plugin.md)
+* [Shenmue I Quests](Shenmue_I_Quests.md)
