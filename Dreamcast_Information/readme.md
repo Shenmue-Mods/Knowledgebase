@@ -2,8 +2,8 @@
 
 ### Subpages:
 
-* [**PVR Graphic Format**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast_Information/PVR_Graphic_Format.md)
-* [**SPSD files**](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/Dreamcast_Information/SPSD_files.md)
+* [**PVR Graphic Format**](PVR_Graphic_Format.md)
+* [**SPSD files**](SPSD_files.md)
 
 ***
 
@@ -45,7 +45,7 @@
 
 ## Misc.:
 
-* http://hydras-world.com/gaming/dreamcast/
+* https://web.archive.org/web/20160123010648/http://hydras-world.com/gaming/dreamcast/
 * http://web.archive.org/web/20050308002101/http://douglas.min.net/~drw/dreamcast/hardware/dev/
 * http://web.archive.org/web/20020405223609/http://www.cerc.utexas.edu/~andrewk/dc/
 * http://web.archive.org/web/20010802063246/http://www.barcode-search.com/kamka.htm
