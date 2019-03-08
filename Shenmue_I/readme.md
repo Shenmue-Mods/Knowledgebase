@@ -6,6 +6,7 @@
 * [Analysis of a simple MAPINFO](Analysis_of_a_simple_MAPINFO.md)
 * [Artificial Intelligence System](Artificial_Intelligence_System.md)
 * [Beta Debug Flags](Beta_Debug_Flags.md)
+* [COLI Data Visualization](COLI_Data_Visualization.md)
 * [Change Loaded Area When Leaving Tomato Convenience Store](Change_Loaded_Area_When_Leaving_Tomato_Convenience_Store.md)
 * [Change Title Screen's Debug Menu Data](Change_Title_Screen's_Debug_Menu_Data.md)
 * [Changing Fighting Style](Changing_Fighting_Style.md)
