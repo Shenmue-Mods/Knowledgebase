@@ -19,4 +19,5 @@
 * [Remove/Swap Area Collision Data](Remove_Swap_Area_Collision_Data.md)
 * [Remove Warp Zone from Tomato Convenience Store](Remove_Warp_Zone_from_Tomato_Convenience_Store.md)
 * [Shenmue Patch Code Guide](Shenmue_Patch_Code_Guide.md)
-* [Vending Machine Swapping](WAV_to_STR.md)
+* [Vending Machine Swapping](Vending_Machine_Swapping.md)
+* [WAV to STR](WAV_to_STR.md)
