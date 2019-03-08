@@ -56,9 +56,11 @@
 
 ***
 
-## How to Contribute:
+## Contribute
 
-Please read [CONTRIBUTING](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/CONTRIBUTING.md).
+Contributions are most welcome, please adhere to the [contribution guidelines](CONTRIBUTING.md).
+
+**[⬆ back to top](#contents)**
 
 ## Credits:
 
