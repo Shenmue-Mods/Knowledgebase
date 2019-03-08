@@ -64,4 +64,4 @@ Contributions are most welcome, please adhere to the [contribution guidelines](C
 
 ## Credits
 
-See the [CREDITS](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/CREDITS.md).
+See the [CREDITS](CREDITS.md).
