@@ -2,13 +2,13 @@
 
 * Create a [GitHub account](https://github.com/signup/free).
 
-* [Fork Shenmue-Mods](https://github.com/Shenmue-Mods/Shenmue-Mods/fork).
+* [Fork Knowledgebase](https://github.com/Shenmue-Mods/Knowledgebase/fork).
 
 * Learn to use [git](http://git-scm.com). Try a tutorial such as the one [provided by GitHub](http://try.GitHub.io/levels/1/challenges/1).
 
-* For more detailed tips, read the [submission guide](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/CONTRIBUTING.md#submitting-contributions) below.
+* For more detailed tips, read the [submission guide](#submitting-contributions) below.
 
-* Remember the 4 Wude. :pray:
+* Remember the 4 Wude... :pray:
 
 ## Submitting contributions
 
