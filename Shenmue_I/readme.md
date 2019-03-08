@@ -15,7 +15,7 @@
 * [Increase the size of the Loading Screen area names](Increase_the_size_of_the_Loading_Screen_area_names.md)
 * [Map Names/IDs](Map_Names_IDs.md)
 * [Notebook Hacking](Notebook_Hacking.md)
-* [Remove Collision Data From Maps without COLI in Mapinfo](Remove_Collision_Data_From_Maps_without_COLI_in_MAPINFO.md)
+* [Remove Collision Data From Maps without COLI in MAPINFO](Remove_Collision_Data_From_Maps_without_COLI_in_MAPINFO.md)
 * [Remove/Swap Area Collision Data](Remove_Swap_Area_Collision_Data.md)
 * [Remove Warp Zone from Tomato Convenience Store](Remove_Warp_Zone_from_Tomato_Convenience_Store.md)
 * [Shenmue Patch Code Guide](Shenmue_Patch_Code_Guide.md)
