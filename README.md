@@ -36,7 +36,7 @@
 * [WAV to STR](Shenmue_I/WAV_to_STR.md)
 
 ## Shenmue II
-* [Character Database](Shenmue_II/Character%20Database.md)
+* [Character Database](Shenmue_II/Character_Database.md)
 * [Character Database per Filenames](Shenmue_II/Character_Database_per_Filenames.md)
 * [Hack Into QTE Cutscenes To Explore Them In Game](Shenmue_II/Hack_Into_QTE_Cutscenes_To_Explore_Them_In_Game.md)
 * [How to Play Any Music Track in the Title Screen](Shenmue_II/How_to_Play_Any_Music_Track_in_the_Title_Screen.md)
