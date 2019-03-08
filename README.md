@@ -19,6 +19,7 @@
 * [Analysis of a simple MAPINFO](Shenmue_I/Analysis_of_a_simple_MAPINFO.md)
 * [Artificial Intelligence System](Shenmue_I/Artificial_Intelligence_System.md)
 * [Beta Debug Flags](Shenmue_I/Beta_Debug_Flags.md)
+* [COLI Data Visualization](Shenmue_I/COLI_Data_Visualization.md)
 * [Change Loaded Area When Leaving Tomato Convenience Store](Shenmue_I/Change_Loaded_Area_When_Leaving_Tomato_Convenience_Store.md)
 * [Change Title Screen's Debug Menu Data](Shenmue_I/Change_Title_Screen's_Debug_Menu_Data.md)
 * [Changing Fighting Style](Shenmue_I/Changing_Fighting_Style.md)
