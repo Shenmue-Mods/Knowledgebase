@@ -1,4 +1,4 @@
-# Shenmue I (Dreamcast)
+# Shenmue I
 
 ### Subpages:
 
