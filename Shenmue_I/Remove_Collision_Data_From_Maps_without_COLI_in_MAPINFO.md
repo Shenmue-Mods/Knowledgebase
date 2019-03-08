@@ -1,4 +1,4 @@
-# Remove Collision Data From Maps without COLI in Mapinfo
+# Remove Collision Data From Maps without COLI in MAPINFO
 
 This page will show you how to remove collision data from a map in *Shenmue I* that does not have its clipping in `MAPINFO.BIN`.
 
