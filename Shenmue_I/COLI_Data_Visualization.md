@@ -7,7 +7,7 @@ coordinates, in order to plot all the points onto a scene.
 
 The text file is generated using a [Ruby](https://www.ruby-lang.org/en/) script (`coli2floats.rb`), which takes a binary file of raw COLI data.
 
-The raw COLI data is extracted from a `MAPINFO.BIN` by hand (using a [hex editor](https://mh-nexus.de/en/hxd/)). Specifically, you find COLS in the .bin,
+The raw COLI data is extracted from a `MAPINFO.BIN` by hand (using a [hex editor](https://mh-nexus.de/en/hxd/)). Specifically, you find COLS in the .BIN,
 and you copy the first COLI section, but only the bytes (that is, without the string COLI and without
 the next 4 bytes after COLI; these 4 bytes is the size of the COLI section, and this section starts
 after these 4 bytes).
