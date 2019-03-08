@@ -28,11 +28,12 @@
 * [Increase the size of the Loading Screen area names](Shenmue_I/Increase_the_size_of_the_Loading_Screen_area_names.md)
 * [Map Names/IDs](Shenmue_I/Map_Names_IDs.md)
 * [Notebook Hacking](Shenmue_I/Notebook_Hacking.md)
-* [Remove Collision Data From Maps without COLI in Mapinfo](Shenmue_I/Remove_Collision_Data_From_Maps_without_COLI_in_Mapinfo.md)
+* [Remove Collision Data From Maps without COLI in MAPINFO](Shenmue_I/Remove_Collision_Data_From_Maps_without_COLI_in_MAPINFO.md)
 * [Remove/Swap Area Collision Data](Shenmue_I/Remove_Swap_Area_Collision_Data.md)
 * [Remove Warp Zone from Tomato Convenience Store](Shenmue_I/Remove_Warp_Zone_from_Tomato_Convenience_Store.md)
 * [Shenmue Patch Code Guide](Shenmue_I/Shenmue_Patch_Code_Guide.md)
-* [Vending Machine Swapping](Shenmue_I/WAV_to_STR.md)
+* [Vending Machine Swapping](Shenmue_I/Vending_Machine_Swapping.md)
+* [WAV to STR](Shenmue_I/WAV_to_STR.md)
 
 ## Shenmue II
 * [Character Database](Shenmue_II/Character%20Database.md)
