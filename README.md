@@ -3,7 +3,7 @@
 *Creating, collecting & preserving knowledge of hacking & modding Shenmue games.*
 
 ***
-## Contents:
+## Contents
 * [Shenmue_I](#shenmue-i)
 * [Shenmue_II](#shenmue-ii)
 * [Shenmue_II (Xbox)](#shenmue-ii-xbox)
@@ -62,6 +62,6 @@ Contributions are most welcome, please adhere to the [contribution guidelines](C
 
 **[⬆ back to top](#contents)**
 
-## Credits:
+## Credits
 
 See the [CREDITS](https://github.com/Shenmue-Mods/Shenmue-Mods/blob/master/CREDITS.md).
