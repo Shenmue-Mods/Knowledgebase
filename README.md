@@ -60,8 +60,10 @@
 
 Contributions are most welcome, please adhere to the [contribution guidelines](CONTRIBUTING.md).
 
-**[⬆ back to top](#contents)**
+
 
 ## Credits
 
 See the [CREDITS](CREDITS.md).
+
+**[⬆ back to top](#contents)**
