@@ -1,7 +1,6 @@
 # Shenmue I
 
-### Subpages:
-
+## Contents
 * [1ST_READ.BIN Interface Content](1ST_READ_Interface_Content.md)
 * [1ST_READ Text/Pointer modifications](1ST_READ_Text_Pointer_mods.md)
 * [Analysis of a simple MAPINFO](Analysis_of_a_simple_MAPINFO.md)
