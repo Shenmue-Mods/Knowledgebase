@@ -4,10 +4,10 @@
 
 ***
 ## Contents
-* [Shenmue_I](#shenmue-i)
-* [Shenmue_II](#shenmue-ii)
-* [Shenmue_II (Xbox)](#shenmue-ii-xbox)
-* [What's_Shenmue](#whats-shenmue)
+* [Shenmue I](#shenmue-i)
+* [Shenmue II](#shenmue-ii)
+* [Shenmue II (Xbox)](#shenmue-ii-xbox)
+* [What's Shenmue](#whats-shenmue)
 * [Dreamcast Information](Dreamcast_Information)
 * [Miscellaneous](Miscellaneous)
 * [Links](Links.md)
