@@ -1,9 +1,9 @@
 # Dreamcast Information
 
-### Subpages:
+## Contents
 
-* [**PVR Graphic Format**](PVR_Graphic_Format.md)
-* [**SPSD files**](SPSD_files.md)
+* [PVR Graphic Format](PVR_Graphic_Format.md)
+* [SPSD files](SPSD_files.md)
 
 ***
 
