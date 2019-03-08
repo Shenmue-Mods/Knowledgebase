@@ -1,6 +1,6 @@
 <h1 align="center">Shenmue Modding Knowledgebase</h1>
 
-<p align="center"><i>Creating, collecting & preserving knowledge of hacking & modding Shenmue games.</i></p>
+<p align="center"><i>Creating, collecting & preserving knowledge of modding & hacking Shenmue games.</i></p>
 
 ***
 ## Contents
