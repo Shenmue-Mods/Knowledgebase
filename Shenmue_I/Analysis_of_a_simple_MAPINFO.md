@@ -70,7 +70,12 @@ A0 00 00 00 = value? pointer? (if it's a pointer, it points to offset CC) [Value
 
 AKIR
 
------------------------------ New thought about the given below: I think it's assembly code (with data/pointers/etc, too), and that's about loading the MAP.MT5 file, as well about specific settings for the player (like, if he's able to move the character or open the menu system).
+-----------------------------
+New thought about the given below:
+I think it's assembly code (with data/pointers/etc, too),
+and that's about loading the MAP.MT5 file,
+as well about specific settings for the player
+(like, if he's able to move the character or open the menu system).
 
 50 01 73 43 = Value, of what?
 00 00 00 1B = Value, of what?
