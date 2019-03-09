@@ -27,6 +27,7 @@
 * [Characters Names/IDs/Models](Shenmue_I/Characters_Names_IDs_Models.md)
 * [Fusing Maps Together](Shenmue_I/Fusing_Maps_Together.md)
 * [Increase the size of the Loading Screen area names](Shenmue_I/Increase_the_size_of_the_Loading_Screen_area_names.md)
+* [Load Model In Area 0000](Shenmue_I/Load_Model_In_Area_0000.md)
 * [Map Names/IDs](Shenmue_I/Map_Names_IDs.md)
 * [Notebook Hacking](Shenmue_I/Notebook_Hacking.md)
 * [Remove Collision Data From Maps without COLI in MAPINFO](Shenmue_I/Remove_Collision_Data_From_Maps_without_COLI_in_MAPINFO.md)
