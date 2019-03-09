@@ -9,10 +9,10 @@
 #ifdef USER_takanao
 #undef USER_takanao
 #endif
-/*#define USER_takanao /* ¥Ç¥Ğ¥Ã¥°¥·¥ó¥Ü¥ë */
+/*#define USER_takanao /* ãƒ‡ãƒãƒƒã‚°ã‚·ãƒ³ãƒœãƒ« */
 
 /* 
- *	¹½Â¤ÂÎ
+ *	æ§‹é€ ä½“
  */
 typedef	struct	{
     int 	id;	/* 'TRCK' */
@@ -32,7 +32,7 @@ typedef	struct	{
 } SEQ;
 
 enum	{
-    /* ¥·¡¼¥±¥ó¥¹¥³¥Ş¥ó¥É */
+    /* ã‚·ãƒ¼ã‚±ãƒ³ã‚¹ã‚³ãƒãƒ³ãƒ‰ */
     stEND = 0,
     stCAMERA,
     stMOVE,
@@ -41,7 +41,7 @@ enum	{
     stVOICE,
     stSE,
 
-    /* ¥Ğ¥Ã¥Õ¥¡¥µ¥¤¥º */
+    /* ãƒãƒƒãƒ•ã‚¡ã‚µã‚¤ã‚º */
     SEQBSIZE = 128*1024,
     CAMBSIZE = 256*1024,
     MOVBSIZE = 512*1024,
@@ -49,11 +49,11 @@ enum	{
     MAXSTR  = 1024,
     MAXCLIP = 1024,
 
-    /* ¥À¥ß¡¼¤ÎID */
+    /* ãƒ€ãƒŸãƒ¼ã®ID */
     ID_CAMERA = MAKE_ID('(','^','^',';'),
 };
 
-typedef	struct	{		/* ºî¶ÈÎÎ°è¤Î³ä¤êÅö¤Æ */
+typedef	struct	{		/* ä½œæ¥­é ˜åŸŸã®å‰²ã‚Šå½“ã¦ */
     char	track[8];
     char	seq[SEQBSIZE];
     char	cam[CAMBSIZE];
@@ -65,7 +65,7 @@ typedef	struct	{		/* ºî¶ÈÎÎ°è¤Î³ä¤êÅö¤Æ */
 } WORK;
 
 /* 
- *	¥×¥í¥È¥¿¥¤¥×
+ *	ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—
  */
 static	int	MakeCamOnly();
 static	int	MakeData();
@@ -93,7 +93,7 @@ extern	void	SetInt32(void *, int);
 extern	float 	GetAiffTime(char *fname);
 
 /*
- *	¥°¥í¡¼¥Ğ¥ëÊÑ¿ô
+ *	ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
  */
 extern	Uint32	Scene[];
 extern	Uint32	MoveID[];
@@ -107,7 +107,7 @@ extern	char	*VoiceName[];
 extern	char	*SoundEffectName[];
 extern	float	PlayOffs[3];
 extern	float	PlayRot[3];
-float	*xxx = PlayRot;		/* »È¤Ã¤Æ¤Ê¤¤¤±¤É¥¨¥é¡¼¤òµ¯¤³¤µ¤»¤ë¤¿¤á */
+float	*xxx = PlayRot;		/* ä½¿ã£ã¦ãªã„ã‘ã©ã‚¨ãƒ©ãƒ¼ã‚’èµ·ã“ã•ã›ã‚‹ãŸã‚ */
 extern	char	_fdata[];
 extern	char	_fbss[];
 
@@ -141,7 +141,7 @@ static	int	*scSE     = (int *)SoundEffectID;
 
 int main(int argc, char *argv[])
 {
-    /* ¥ª¥×¥·¥ç¥ó¥Á¥§¥Ã¥¯ */
+    /* ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãƒã‚§ãƒƒã‚¯ */
     argv++;
     for ( ; argv[0] && argv[0][0] == '-'; argv++ ){	/* options */
 	switch ( argv[0][1] ){
@@ -168,21 +168,21 @@ int main(int argc, char *argv[])
 	}
     }
 
-    /* ¥«¥á¥éÈÖ¹æ¥Á¥§¥Ã¥¯ */
+    /* ã‚«ãƒ¡ãƒ©ç•ªå·ãƒã‚§ãƒƒã‚¯ */
     if ( camno > 9999 ){
 	printf("seqconv: camera number %d too large\n", camno);
 	return 1;	/* NG */
     }
 
-    /* little-endian¤ËÀßÄê */
+    /* little-endianã«è¨­å®š */
     SetEndian(0);
 
-    /* ¥á¥â¥ê³ÎÊİ */
+    /* ãƒ¡ãƒ¢ãƒªç¢ºä¿ */
     if ( !AllocMem() ){
 	return 1;	/* NG */
     }
 
-    /* ¥Ç¡¼¥¿¤ÎºîÀ® */
+    /* ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ */
     if ( camout ){
 	if ( !MakeCamOnly() ){
 	    return 1;	/* NG */
@@ -194,22 +194,22 @@ int main(int argc, char *argv[])
 	}
     }
 
-    /* ¥Õ¥¡¥¤¥ë¤Î½ñ¤­¹ş¤ß */
+    /* ãƒ•ã‚¡ã‚¤ãƒ«ã®æ›¸ãè¾¼ã¿ */
     if ( !WriteFile() ){
 	return 1;	/* NG */
     }
 
-    /* ¤ª¤·¤Ş¤¤ */
+    /* ãŠã—ã¾ã„ */
     free(workbuff);
 
     if ( viderr ){
-	printf("VoiceID[] ¤Ë¥Õ¥¡¥¤¥ëÌ¾¤¬Æş¤Ã¤Æ¤ë¤è¤¦¤Ç¤¹¤Î¤Ç¡¢¤Ä¤¤¤Ç¤Î»ş¤ËÄ¾¤·¤Æ²¼¤µ¤¤¡£\n");
+	printf("VoiceID[] ã«ãƒ•ã‚¡ã‚¤ãƒ«åãŒå…¥ã£ã¦ã‚‹ã‚ˆã†ã§ã™ã®ã§ã€ã¤ã„ã§ã®æ™‚ã«ç›´ã—ã¦ä¸‹ã•ã„ã€‚\n");
     }
     return 0;	/* OK */
 }
 
 /*
- *	¥Õ¥¡¥¤¥ë¤Î½ñ¤­¹ş¤ß
+ *	ãƒ•ã‚¡ã‚¤ãƒ«ã®æ›¸ãè¾¼ã¿
  */
 
 int WriteFile()
@@ -232,12 +232,12 @@ int WriteFile()
 }
 
 /*
- *	¥á¥â¥ê³ÎÊİ
+ *	ãƒ¡ãƒ¢ãƒªç¢ºä¿
  */
 
 int AllocMem()
 {
-    workbuff = malloc(sizeof(WORK)+1024);	/* Â¿¤¤¤á¤Ë */
+    workbuff = malloc(sizeof(WORK)+1024);	/* å¤šã„ã‚ã« */
     if ( !workbuff ){
 	printf("seqconv: not enough memory\n");
 	return 0;	/* NG */
@@ -249,23 +249,23 @@ int AllocMem()
 }
 
 /*
- *	¥«¥á¥é¥Ç¡¼¥¿¤Î¤ß¤ÎºîÀ®
+ *	ã‚«ãƒ¡ãƒ©ãƒ‡ãƒ¼ã‚¿ã®ã¿ã®ä½œæˆ
  */
 
 int MakeCamOnly()
 {
     int  datasize;
 
-    /* ¥«¥á¥é¥Ç¡¼¥¿¤ÎºîÀ® */
+    /* ã‚«ãƒ¡ãƒ©ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ */
     CreateCamData();
 
-    /* ¥Ç¡¼¥¿¤ò¥Ğ¥Ã¥Õ¥¡ÀèÆ¬¤ØÅ¾Á÷ */
+    /* ãƒ‡ãƒ¼ã‚¿ã‚’ãƒãƒƒãƒ•ã‚¡å…ˆé ­ã¸è»¢é€ */
     datasize = camdata - work->cam;
     memcpy(workbuff, work->cam, datasize);
 }
 
 /*
- *	¥Ç¡¼¥¿¤ÎºîÀ®
+ *	ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ
  */
 
 int MakeData()
@@ -274,7 +274,7 @@ int MakeData()
     int  *seq, *ip;
     int   nframes;
 
-    /* ¥·¡¼¥±¥ó¥¹¥Ç¡¼¥¿¤ÎºîÀ® */
+    /* ã‚·ãƒ¼ã‚±ãƒ³ã‚¹ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ */
 
     seq = (int *)(work->seq + sizeof(SEQHEADER));
     ip  = Scene;
@@ -308,7 +308,7 @@ int MakeData()
     SetInt32(seq++, -1);		/* end mark */
     workdatap = (char *)seq;
 
-    /* ¥ê¥ß¥Ã¥È¥Á¥§¥Ã¥¯ */
+    /* ãƒªãƒŸãƒƒãƒˆãƒã‚§ãƒƒã‚¯ */
 
     if ( (char *)seq >= &work->seq[SEQBSIZE] ){
 	printf("seqconv: conversion error (seq,internal)\n");
@@ -323,7 +323,7 @@ int MakeData()
 	return 0;	/* NG */
     }
 
-    /* ¥Ø¥Ã¥À¤ÎÀßÄê */
+    /* ãƒ˜ãƒƒãƒ€ã®è¨­å®š */
 
     memcpy(&seqhdr->id, "ASEQ", 4);
     SetInt32(&seqhdr->size, (char *)seq - work->seq);
@@ -331,18 +331,18 @@ int MakeData()
     seqhdr->endian  = endian();
     seqhdr->version = 5;
 
-    /* ¥¹¥×¥é¥¤¥ó¥Ç¡¼¥¿¤ÎÅ¾Á÷ */
+    /* ã‚¹ãƒ—ãƒ©ã‚¤ãƒ³ãƒ‡ãƒ¼ã‚¿ã®è»¢é€ */
 
     TransSplData();
 
-    /* Á´ÂÎ¥Ø¥Ã¥À¤ÎÀßÄê */
+    /* å…¨ä½“ãƒ˜ãƒƒãƒ€ã®è¨­å®š */
 
     memcpy(workbuff, "TRCK", 4);
     SetInt32(workbuff+4, workdatap - workbuff);
 }
 
 /*
- *	¥¹¥×¥é¥¤¥ó¥Ç¡¼¥¿¤ÎÅ¾Á÷
+ *	ã‚¹ãƒ—ãƒ©ã‚¤ãƒ³ãƒ‡ãƒ¼ã‚¿ã®è»¢é€
  */
 
 static void TransSplData()
@@ -351,15 +351,15 @@ static void TransSplData()
     char  *datap = workdatap;
     short *clipp;
 
-    /* ¥«¥á¥é¥Ç¡¼¥¿¤ÎÅ¾Á÷ */
+    /* ã‚«ãƒ¡ãƒ©ãƒ‡ãƒ¼ã‚¿ã®è»¢é€ */
 
     headsize = 16 + (ncam + 1) * sizeof(char **);
     datasize = camdata - work->cam;
     memcpy(datap, "ACAM", 4);			/* chunk ID */
     SetInt32(datap + 4, headsize + datasize);	/* chunk size */
-    SetInt32(datap + 12, ncam);			/* ¿ô */
+    SetInt32(datap + 12, ncam);			/* æ•° */
     datap += 16;
-    for (i = 0; i < ncam; i++){		/* ¥ª¥Õ¥»¥Ã¥È¥Æ¡¼¥Ö¥ë¤ÎºîÀ® */
+    for (i = 0; i < ncam; i++){		/* ã‚ªãƒ•ã‚»ãƒƒãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã®ä½œæˆ */
 	SetInt32(datap, work->camtbl[i] - work->cam + headsize);
 	datap += 4;
     }
@@ -368,15 +368,15 @@ static void TransSplData()
     memcpy(datap, work->cam, datasize);
     datap += datasize;
 
-    /* °ÜÆ°¥Ç¡¼¥¿¤ÎÅ¾Á÷ */
+    /* ç§»å‹•ãƒ‡ãƒ¼ã‚¿ã®è»¢é€ */
 
     headsize = 16 + (nmov + 1) * sizeof(char **);
     datasize = movdata - work->mov;
     memcpy(datap, "AMOV", 4);			/* chunk ID */
     SetInt32(datap + 4, headsize + datasize);	/* chunk size */
-    SetInt32(datap + 12, nmov);			/* ¿ô */
+    SetInt32(datap + 12, nmov);			/* æ•° */
     datap += 16;
-    for (i = 0; i < nmov; i++){		/* ¥ª¥Õ¥»¥Ã¥È¥Æ¡¼¥Ö¥ë¤ÎºîÀ® */
+    for (i = 0; i < nmov; i++){		/* ã‚ªãƒ•ã‚»ãƒƒãƒˆãƒ†ãƒ¼ãƒ–ãƒ«ã®ä½œæˆ */
 	SetInt32(datap, work->movtbl[i] - work->mov + headsize);
 	datap += 4;
     }
@@ -385,10 +385,10 @@ static void TransSplData()
     memcpy(datap, work->mov, datasize);
     datap += datasize;
 
-    /* Ê¸»úÎó¥Ç¡¼¥¿¤ÎÅ¾Á÷ */
+    /* æ–‡å­—åˆ—ãƒ‡ãƒ¼ã‚¿ã®è»¢é€ */
 
     if ( nstr ){
-	workdatap = datap;			/* 'ASTR' ¤ÎÀèÆ¬¤ò¥á¥â */
+	workdatap = datap;			/* 'ASTR' ã®å…ˆé ­ã‚’ãƒ¡ãƒ¢ */
 	headsize = 16 + (nstr + 1) * sizeof(char *);
 	datap += headsize;
 	for (i = 0; i < nstr; i++){	
@@ -397,19 +397,19 @@ static void TransSplData()
 	    datap += strlen(work->strtbl[i]) + 1;
 	}
 	SetInt32(workdatap + 16 + i * sizeof(char *), datap - workdatap);
-	datap = (char *)(((int)datap + 3) & ~3); 	/* ÀÚ¤ê¾å¤² */
+	datap = (char *)(((int)datap + 3) & ~3); 	/* åˆ‡ã‚Šä¸Šã’ */
 	memcpy(workdatap, "ASTR", 4); 			/* chunk ID */
 	SetInt32(workdatap + 4, datap - workdatap); 	/* chunk size */
 	SetInt32(workdatap + 12, nstr);
     }
 
-    /* ¸ı¥Ñ¥¯¥Ç¡¼¥¿¤ÎÅ¾Á÷ */
+    /* å£ãƒ‘ã‚¯ãƒ‡ãƒ¼ã‚¿ã®è»¢é€ */
 
 #ifdef USER_takanao
 	  printf("  nclip = %x\n", nclip );
 #endif
     if ( nclip ){
-	workdatap = datap;			/* 'ALIP' ¤ÎÀèÆ¬¤ò¥á¥â */
+	workdatap = datap;			/* 'ALIP' ã®å…ˆé ­ã‚’ãƒ¡ãƒ¢ */
 	headsize = 16 + (nclip + 1) * sizeof(short *);
 	datap += headsize;
 	for (i = 0; i < nclip; i++){	
@@ -427,25 +427,25 @@ static void TransSplData()
 	    }
 	}
 	SetInt32(workdatap + 16 + i * sizeof(short *), datap - workdatap);
-	datap = (char *)(((int)datap + 3) & ~3); 	/* ÀÚ¤ê¾å¤² */
+	datap = (char *)(((int)datap + 3) & ~3); 	/* åˆ‡ã‚Šä¸Šã’ */
 	memcpy(workdatap, "ALIP", 4); 			/* chunk ID */
 	SetInt32(workdatap + 4, datap - workdatap); 	/* chunk size */
 	SetInt32(workdatap + 12, nclip);
     }
 
-    /* ¥İ¥¤¥ó¥¿¤ò¥á¥â¤·¤ÆÌá¤ë */
+    /* ãƒã‚¤ãƒ³ã‚¿ã‚’ãƒ¡ãƒ¢ã—ã¦æˆ»ã‚‹ */
 
     workdatap = datap;
 }
 
 /*
- *	¥«¥á¥é¤Î¥ê¥¯¥¨¥¹¥È
+ *	ã‚«ãƒ¡ãƒ©ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 
 static int *ReqCamera(int *a, int n)
 {
     SEQ *seq = (SEQ *)a;
-    (void)n;				/* £±¤Ä¤À¤±¤Ê¤Î¤ÇÌµ»ë */
+    (void)n;				/* ï¼‘ã¤ã ã‘ãªã®ã§ç„¡è¦– */
 
     seq->type = stCAMERA;
     seq->argc = 2;
@@ -458,7 +458,7 @@ static int *ReqCamera(int *a, int n)
 }
 
 /*
- *	°ÜÆ°¤Î¥ê¥¯¥¨¥¹¥È
+ *	ç§»å‹•ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 
 static int *ReqMove(int *a, int n)
@@ -478,7 +478,7 @@ static int *ReqMove(int *a, int n)
 }
 
 /*
- *	¥â¡¼¥·¥ç¥ó¤Î¥ê¥¯¥¨¥¹¥È
+ *	ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 
 static int *ReqMotion(int *a, int n)
@@ -504,7 +504,7 @@ static int *ReqMotion(int *a, int n)
 }
 
 /*
- *	ÆÃ¼ì¸ú²Ì¤Î¥ê¥¯¥¨¥¹¥È
+ *	ç‰¹æ®ŠåŠ¹æœã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 static int *ReqEffect(int *a, int n)
 {
@@ -547,7 +547,7 @@ static int *ReqEffect(int *a, int n)
 }
 
 /*
- *	À¼¤Î¥ê¥¯¥¨¥¹¥È
+ *	å£°ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 
 static int *ReqVoice(int *a, int n)
@@ -585,7 +585,7 @@ printf("scVoice(length) : %f, %x\n",sec, seq->args[4]);
 	  printf(" ADR-work = %x %x %x\n",  &work, &work->strtbl, &work->cliptbl );
 #endif*/
 	if ( scVoice[2] ){
-	  /* ¸ı¥Ñ¥¯ */
+	  /* å£ãƒ‘ã‚¯ */
 /*#ifdef USER_takanao
 	  printf(" VoiceID[2] = %d,  nclip = %x,  ADR-cliptbl = %x\n", scVoice[2], nclip, &work->cliptbl[nclip] );
 #endif*/
@@ -609,7 +609,7 @@ enum {
 #define SE_ADDITION (0.5)
 
 /*
- *	¸ú²Ì²»¤Î¥ê¥¯¥¨¥¹¥È
+ *	åŠ¹æœéŸ³ã®ãƒªã‚¯ã‚¨ã‚¹ãƒˆ
  */
 
 static int *ReqSE(int *a, int n)
@@ -625,7 +625,7 @@ static int *ReqSE(int *a, int n)
 	SetInt32(&seq->args[2], nstr);
 	SetInt32(&seq->args[3], scSE[2]);
 	if ( scSE[2] == SEQCONV_VER2 ) {
-	  /* ¿·¥Ğ¡¼¥¸¥ç¥ó¥Ç¡¼¥¿ */
+	  /* æ–°ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãƒ‡ãƒ¼ã‚¿ */
 /*#ifdef USER_takanao
 printf("scSE(Ver3) : %x, %x, %d, %d, %d, %d, %d\n",scSE[0],scSE[1],scSE[2],scSE[3],scSE[4],scSE[5],scSE[6]);
 #endif
@@ -635,7 +635,7 @@ printf("scSE(Ver3) : %x, %x, %d, %d, %d, %d, %d\n",scSE[0],scSE[1],scSE[2],scSE[
 	  SetInt32(&seq->args[7], scSE[6]);    /* flag */
 	  scSE += 7;
 	} else {
-	  /* µì¥Ğ¡¼¥¸¥ç¥ó¥Ç¡¼¥¿ */
+	  /* æ—§ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãƒ‡ãƒ¼ã‚¿ */
 /*#ifdef USER_takanao
 printf("scSE(Ver1) : %x, %x\n",scSE[0], scSE[1]);
 #endif
@@ -646,7 +646,7 @@ printf("scSE(Ver1) : %x, %x\n",scSE[0], scSE[1]);
 	  scSE += 2;
 	}
 
-	/* SEÄ¹¤µ */
+	/* SEé•·ã• */
 	seq->args[8] = 0;
 	if ( aifftime ){
 	    sec = GetAiffTime(SoundEffectName[nse]);
@@ -667,9 +667,9 @@ printf("scSE(length) : %f, %d\n",sec, (int)(sec * 30.0f));
     return (int *)seq; 
 }
 
-/*-------  Â¿¸Ğ¥¹¥×¥é¥¤¥ó¥â¥¸¥å¡¼¥ëÍÑ¥Ç¡¼¥¿ÊÑ´¹ --------*/
+/*-------  å¤šæ¹–ã‚¹ãƒ—ãƒ©ã‚¤ãƒ³ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«ç”¨ãƒ‡ãƒ¼ã‚¿å¤‰æ› --------*/
 /*
- *	¥«¥á¥é¥Ç¡¼¥¿¤ÎºîÀ®
+ *	ã‚«ãƒ¡ãƒ©ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ
  */
 
 static void CreateCamData()
@@ -702,7 +702,7 @@ static void CreateCamData()
 			    "roll",
 			};
 
-			printf ("%s[%d].time¤ÎÃÍ¤¬Àµ¤·¤¯¤¢¤ê¤Ş¤»¤ó¡£NÈÖÌÜ¤Îtime¤Ï¡¢N-1ÈÖÌÜ¤Îtime¤è¤êÂç¤­¤¯¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£\n", str[i], n);
+			printf ("%s[%d].timeã®å€¤ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚Nç•ªç›®ã®timeã¯ã€N-1ç•ªç›®ã®timeã‚ˆã‚Šå¤§ãããªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚\n", str[i], n);
 			exit (1);
 		    }
 		    ptr++;
@@ -718,7 +718,7 @@ static void CreateCamData()
 }
 
 /*
- *	°ÜÆ°¥Ç¡¼¥¿¤ÎºîÀ®
+ *	ç§»å‹•ãƒ‡ãƒ¼ã‚¿ã®ä½œæˆ
  */
 
 static void CreateMovData()
@@ -752,7 +752,7 @@ static void CreateMovData()
 			    "kaoZ",
 			};
 
-			printf ("MoveAll[%d]¤Î%s[%d].time¤ÎÃÍ¤¬Àµ¤·¤¯¤¢¤ê¤Ş¤»¤ó¡£NÈÖÌÜ¤Îtime¤Ï¡¢N-1ÈÖÌÜ¤Îtime¤è¤êÂç¤­¤¯¤Ê¤±¤ì¤Ğ¤Ê¤ê¤Ş¤»¤ó¡£\n", nmov, str[i], n);
+			printf ("MoveAll[%d]ã®%s[%d].timeã®å€¤ãŒæ­£ã—ãã‚ã‚Šã¾ã›ã‚“ã€‚Nç•ªç›®ã®timeã¯ã€N-1ç•ªç›®ã®timeã‚ˆã‚Šå¤§ãããªã‘ã‚Œã°ãªã‚Šã¾ã›ã‚“ã€‚\n", nmov, str[i], n);
 			exit (1);
 		    }
 		    ptr++;
@@ -768,15 +768,15 @@ static void CreateMovData()
 }
 
 /*
-	MOTION CAMERA¤Î¥Ç¡¼¥¿¹½Â¤	     TRANS/ROT¤Î¥Ç¡¼¥¿¹½Â¤       
+	MOTION CAMERAã®ãƒ‡ãƒ¼ã‚¿æ§‹é€ 	     TRANS/ROTã®ãƒ‡ãƒ¼ã‚¿æ§‹é€        
 	+-------------------------------+    +-------------------------------+
-	|int32¡ß1       ¥¢¥È¥ê¥Ó¥å¡¼¥È  |    | TRN-X                         |
-	+-------------------------------+    |int32¡ß1       key frame¤Î¸Ä¿ô |
-	| POS-X                         |    |float¡ß¸Ä¿ô    time            |
-	|int32¡ß1       key frame¤Î¸Ä¿ô |    |float¡ß¸Ä¿ô    value           |
-	|float¡ß¸Ä¿ô    time            |    |float¡ß¸Ä¿ô    slope           |
-	|float¡ß¸Ä¿ô    value           |    +-------------------------------+
-	|float¡ß¸Ä¿ô    slope           |    | TRN-Y                         |
+	|int32Ã—1       ã‚¢ãƒˆãƒªãƒ“ãƒ¥ãƒ¼ãƒˆ  |    | TRN-X                         |
+	+-------------------------------+    |int32Ã—1       key frameã®å€‹æ•° |
+	| POS-X                         |    |floatÃ—å€‹æ•°    time            |
+	|int32Ã—1       key frameã®å€‹æ•° |    |floatÃ—å€‹æ•°    value           |
+	|floatÃ—å€‹æ•°    time            |    |floatÃ—å€‹æ•°    slope           |
+	|floatÃ—å€‹æ•°    value           |    +-------------------------------+
+	|floatÃ—å€‹æ•°    slope           |    | TRN-Y                         |
 	+-------------------------------+    +-------------------------------+
 	| POS-Y                         |    | TRN-Z                         |
 	+-------------------------------+    +-------------------------------+
@@ -790,16 +790,16 @@ static void CreateMovData()
 	+-------------------------------+
 	| PERS                          |
 	+-------------------------------+
-	¡ÊºÇ½é¤ÈºÇ¸å¤ò½ü¤­¡¢slope¤Ïleft¤Èright¤Î£²¤Ä¤Î¥Ç¡¼¥¿¤ËÊ¬³ä¤¹¤ë¡Ë
+	ï¼ˆæœ€åˆã¨æœ€å¾Œã‚’é™¤ãã€slopeã¯leftã¨rightã®ï¼’ã¤ã®ãƒ‡ãƒ¼ã‚¿ã«åˆ†å‰²ã™ã‚‹ï¼‰
 */
 static void *CreateSplData(int *ip, void *dp, int cam)
 {
-#define EVENTCAM_SPLINE		0x00000001	/* ¸½ºßÌ¤»ÈÍÑ */
-#define EVENTCAM_ROLL		0x00000020	/* ¥í¡¼¥ë¥Ç¡¼¥¿¤¬¤Ä¤¤¤Æ¤¤¤ë */
-#define EVENTCAM_PERS		0x00000040	/* ¥Ñ¡¼¥¹¥Ç¡¼¥¿¤¬¤Ä¤¤¤Æ¤¤¤ë */
+#define EVENTCAM_SPLINE		0x00000001	/* ç¾åœ¨æœªä½¿ç”¨ */
+#define EVENTCAM_ROLL		0x00000020	/* ãƒ­ãƒ¼ãƒ«ãƒ‡ãƒ¼ã‚¿ãŒã¤ã„ã¦ã„ã‚‹ */
+#define EVENTCAM_PERS		0x00000040	/* ãƒ‘ãƒ¼ã‚¹ãƒ‡ãƒ¼ã‚¿ãŒã¤ã„ã¦ã„ã‚‹ */
     static  int  splorder[2][9] =
     {
-    { 0,1,2,3,4,5,7,6 },	/* camÍÑ pers¤è¤êroll¤òÀè¤Ë¤¹¤ë */
+    { 0,1,2,3,4,5,7,6 },	/* camç”¨ persã‚ˆã‚Šrollã‚’å…ˆã«ã™ã‚‹ */
     { 0,1,2,3,4,5,6,7,8 },
     };
     int *so = cam ? splorder[0] : splorder[1];
@@ -812,10 +812,10 @@ static void *CreateSplData(int *ip, void *dp, int cam)
 	camdata = ip;
 	sprintf((char *)ip, "%04d", camno);
 	ip++;					/* cam No. */
-	ip++;					/* data size¡Ê¤¢¤È¤Ç¡Ë*/
+	ip++;					/* data sizeï¼ˆã‚ã¨ã§ï¼‰*/
     }
 
-    /* ¥Õ¥é¥°ÀßÄê */
+    /* ãƒ•ãƒ©ã‚°è¨­å®š */
     datap = (int (*)[2])dp;
     if ( cam ){
 	n = EVENTCAM_SPLINE;
@@ -828,16 +828,16 @@ static void *CreateSplData(int *ip, void *dp, int cam)
 	SetInt32(ip++, n);
     }
 
-    /* ¥ª¥Õ¥»¥Ã¥È¤ÎÀßÄê */
+    /* ã‚ªãƒ•ã‚»ãƒƒãƒˆã®è¨­å®š */
     if (cam) {
 	for (i = 0; i < 8; i++){
-	    if ( i < 3 ){                       /* 0,1,2 ¤Ï X,Y,Z ¤Ê¤Î¤Ç¤½¤Î¤Ş¤ŞÆş¤ì¤ë */
+	    if ( i < 3 ){                       /* 0,1,2 ã¯ X,Y,Z ãªã®ã§ãã®ã¾ã¾å…¥ã‚Œã‚‹ */
 		offs[i] = PlayOffs[i];
 	    }
-	    else if ( i < 6 ){                  /* cam¤Î 3,4,5 ¤Ï int-X,Y,Z ¤Ê¤Î¤ÇÆş¤ì¤ë */
+	    else if ( i < 6 ){                  /* camã® 3,4,5 ã¯ int-X,Y,Z ãªã®ã§å…¥ã‚Œã‚‹ */
 		offs[i] = PlayOffs[i - 3];
 	    }
-	    else {				/* ¤½¤ÎÂ¾¤Ï 0.0 */
+	    else {				/* ãã®ä»–ã¯ 0.0 */
 		offs[i] = 0.0;
 	    }
 	}
@@ -851,28 +851,28 @@ static void *CreateSplData(int *ip, void *dp, int cam)
 	}
     }
 
-    /* ÊÂ¤ÙÂØ¤¨ */
+    /* ä¸¦ã¹æ›¿ãˆ */
 
     for (i = 0; i < (cam ? 8 : 9); i++){	/* x y z x y z (p) */
-	fp = (FCVKEYt *)datap[so[i]][0];	/* function curve ¤Î¥Ç¡¼¥¿°ÌÃÖ */
-	numfp = datap[so[i]][1];		/* function curve ¤Î¥Ç¡¼¥¿¸Ä¿ô */
+	fp = (FCVKEYt *)datap[so[i]][0];	/* function curve ã®ãƒ‡ãƒ¼ã‚¿ä½ç½® */
+	numfp = datap[so[i]][1];		/* function curve ã®ãƒ‡ãƒ¼ã‚¿å€‹æ•° */
 
 	if ( numfp ){
-	    /* ¥Ç¡¼¥¿¸Ä¿ô¤òÄ´¤Ù¤ë */
+	    /* ãƒ‡ãƒ¼ã‚¿å€‹æ•°ã‚’èª¿ã¹ã‚‹ */
 	    n = numfp * 2 - 2;
-	    SetInt32(ip++, n);	/* key frame¤Î¸Ä¿ô */
+	    SetInt32(ip++, n);	/* key frameã®å€‹æ•° */
 
-	    /* ¥Ç¡¼¥¿¤òÊÂ¤Ù¤ë */
+	    /* ãƒ‡ãƒ¼ã‚¿ã‚’ä¸¦ã¹ã‚‹ */
 	    for (j = 0; j < numfp; j++){
 		value = fp[j].value + offs[i];
 		SetInt32(&ip[0],   *(int *)&fp[j].time);
 		SetInt32(&ip[n],   *(int *)&value);
 		SetInt32(&ip[n*2], *(int *)&fp[j].left_slope);
-		if ( j == 0 ){	/* ºÇ½é¤Îtime¤ò zero ¤Ë¤·¤Æ¤ª¤¯ */
+		if ( j == 0 ){	/* æœ€åˆã®timeã‚’ zero ã«ã—ã¦ãŠã */
 		    SetInt32(ip, 0);
 		}
 		ip++;
-		if ( j != 0 && j != numfp - 1 ){ /* ºÇ½é¤ÈºÇ¸å°Ê³°¤Ï£²¤Ä¤Î¥Ç¡¼¥¿ */
+		if ( j != 0 && j != numfp - 1 ){ /* æœ€åˆã¨æœ€å¾Œä»¥å¤–ã¯ï¼’ã¤ã®ãƒ‡ãƒ¼ã‚¿ */
 		    SetInt32(&ip[0],   *(int *)&fp[j].time);
 		    SetInt32(&ip[n],   *(int *)&value);
 		    SetInt32(&ip[n*2], *(int *)&fp[j].right_slope);
@@ -880,25 +880,25 @@ static void *CreateSplData(int *ip, void *dp, int cam)
 		}
 	    }
 
-	    /* ¼¡¤Ø */
-	    ip += n * (3 - 1);		/* timeÊ¬¤Ï¿Ê¤ó¤Ç¤¤¤ë¤Î¤Ç¡¢value¤ÈslopeÊ¬¤ò¿Ê¤á¤ë */
+	    /* æ¬¡ã¸ */
+	    ip += n * (3 - 1);		/* timeåˆ†ã¯é€²ã‚“ã§ã„ã‚‹ã®ã§ã€valueã¨slopeåˆ†ã‚’é€²ã‚ã‚‹ */
 	} else {
-	    SetInt32(ip++, 0);	/* ¥Ç¡¼¥¿¤¬¤Ê¤¤ */
+	    SetInt32(ip++, 0);	/* ãƒ‡ãƒ¼ã‚¿ãŒãªã„ */
 	}
     }
 
-    /* ¥Ç¥Ğ¥Ã¥°¥â¡¼¥É¤Ê¤é¥Ç¡¼¥¿½ĞÎÏ */
+    /* ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ãªã‚‰ãƒ‡ãƒ¼ã‚¿å‡ºåŠ› */
     if ( camout && cam ){
 	camsize = (char *)ip - (char *)camdata;
 	SetInt32(camdata + 1, camsize);
     }
 
-    /* ¤ª¤·¤Ş¤¤ */
+    /* ãŠã—ã¾ã„ */
     return ip;
 }
 
 /*
- *	¥Õ¥¡¥¤¥ë½ĞÎÏ
+ *	ãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›
  */
 
 static int fwrites(char *fname, void *buff, int size)
@@ -915,20 +915,20 @@ static int fwrites(char *fname, void *buff, int size)
     return wsize;
 }
 
-/*-------------  ¥¨¥ó¥Ç¥£¥¢¥óÊÑ¹¹¥â¥¸¥å¡¼¥ë ------------*/
+/*-------------  ã‚¨ãƒ³ãƒ‡ã‚£ã‚¢ãƒ³å¤‰æ›´ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ« ------------*/
 
 /*
- *	¥°¥í¡¼¥Ğ¥ëÊÑ¿ô
+ *	ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
  */
 
-static	char	endian16[2];	/* 16-bit¤Îendian	*/
-static	char	endian32[4];	/* 32-bit¤Îendian	*/
+static	char	endian16[2];	/* 16-bitã®endian	*/
+static	char	endian32[4];	/* 32-bitã®endian	*/
 static	char	str_little[] = "\0\1\2\3\0\1";
 static	char	str_big[]    = "\3\2\1\0\1\0";
 static	void	SetEndianByStr(char *str);
 
 /*
- *	endian ¥Ç¡¼¥¿¤ÎÀßÄê
+ *	endian ãƒ‡ãƒ¼ã‚¿ã®è¨­å®š
  */
 
 void SetEndian(int big)
@@ -952,7 +952,7 @@ static void SetEndianByStr(char *str)
 }
 
 /*
- *	endian ¤Î¼èÆÀ
+ *	endian ã®å–å¾—
  */
 
 int endian()
@@ -961,7 +961,7 @@ int endian()
 }
 
 /*
- *	¸½ºß¤Î endian ¤Ë¤è¤ë16/32-bit¥Ç¡¼¥¿¤ÎÆÉ¤ß½ñ¤­
+ *	ç¾åœ¨ã® endian ã«ã‚ˆã‚‹16/32-bitãƒ‡ãƒ¼ã‚¿ã®èª­ã¿æ›¸ã
  */
 
 int GetInt16(void *p)
@@ -989,7 +989,7 @@ void SetInt32(void *p, int n)
     ((uchar *)p)[endian32[3]] = n >> 24;
 }
 
-/*-------------  AIFF¥Õ¥¡¥¤¥ë¥â¥¸¥å¡¼¥ë ------------*/
+/*-------------  AIFFãƒ•ã‚¡ã‚¤ãƒ«ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ« ------------*/
 
 #define	ushort	unsigned short
 
@@ -1012,7 +1012,7 @@ typedef	struct	{
 } AIFFCHUNK;
 
 /*
- *	AIFF¥Õ¥¡¥¤¥ë¤Î¥×¥ì¥¤»ş´Ö¤ò¼èÆÀ
+ *	AIFFãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ—ãƒ¬ã‚¤æ™‚é–“ã‚’å–å¾—
  */
 
 float GetAiffTime(char *fname)
@@ -1039,14 +1039,14 @@ float GetAiffTime(char *fname)
 	    fclose(fp);
 	    return 0;	/* NG */
 	}
-	fread(&chunk, 1, sizeof(chunk), fp);	/* ¥Á¥ã¥ó¥¯¥Ø¥Ã¥À¤òÆÉ¤à */
-	if ( chunk.chunkID == 'SSND' ){		/* ¥µ¥ó¥×¥ê¥ó¥°¥Ç¡¼¥¿ */
+	fread(&chunk, 1, sizeof(chunk), fp);	/* ãƒãƒ£ãƒ³ã‚¯ãƒ˜ãƒƒãƒ€ã‚’èª­ã‚€ */
+	if ( chunk.chunkID == 'SSND' ){		/* ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ãƒ‡ãƒ¼ã‚¿ */
 	    break;
 	}
-	fseek(fp, chunk.chunkSize, SEEK_CUR);	/* ¼¡¤Î¥Á¥ã¥ó¥¯¤Ø */
+	fseek(fp, chunk.chunkSize, SEEK_CUR);	/* æ¬¡ã®ãƒãƒ£ãƒ³ã‚¯ã¸ */
     }
     fclose(fp);
-    rate = head.SampleRate[1] >> (0x400e - head.SampleRate[0]);	/* 80-bit float¤òÊÑ´¹¡Ê¼êÈ´¤­¡Ë*/
+    rate = head.SampleRate[1] >> (0x400e - head.SampleRate[0]);	/* 80-bit floatã‚’å¤‰æ›ï¼ˆæ‰‹æŠœãï¼‰*/
     sec = (chunk.chunkSize - 8) / head.SampleChannel / (head.SampleSize / 8) / rate;
     if ( verbose ){
 	printf("%s %d-ch %d-bit %g Hz %f sec\n", fname, head.SampleChannel, head.SampleSize, rate, sec);
