@@ -15,6 +15,75 @@ How to load (almost) any other character/model (using the modified data of the M
 
 Reference: ["Characters Names/IDs/Models"](Characters_Names_IDs_Models.md)
 
+## Structure of CHRS entries
+Every value is 4 bytes long (in Little-Endian format).
+Each entry in the CHRS section, has this structure:
+```
+OFFSET TO DefImage
+
+23 00 00 00
+
+OFFSET TO MAIN MODEL NAME STRING (as it's found in the STRG section, example: YKB_M)
+
+04 00 00 00
+
+OFFSET TO Image
+
+19 00 00 00
+
+00 00 80 3F
+
+OFFSET TO MAIN MODEL FIlENAME STRING (as it's found in the STRG section, example: YKB_M.MT5)
+
+OFFSET TO Character
+
+22 00 00 00
+
+STRING ID OF CHARACTER (example: AKIR)
+
+14 00 00 00
+
+OFFSET TO Position
+
+49 00 00 00
+
+FLOAT VALUE OF POSITION IN THE X AXIS (example: 00 00 40 C0)
+
+FLOAT VALUE OF POSITION IN THE Y AXIS (example: 00 00 00 00)
+
+FLOAT VALUE OF POSITION IN THE Z AXIS (example: 00 00 00 00)
+
+OFFSET TO Image
+
+03 00 00 00
+
+OFFSET TO MAIN MODEL NAME STRING (as it's found in the STRG section, example: YKB_M)
+
+OFFSET TO Human
+
+00 00 00 00
+
+OFFSET TO Player
+
+00 00 00 00
+
+OFFSET TO Flags
+
+03 00 00 00
+
+OFFSET TO DISP
+
+OFFSET TO Osage
+
+00 00 00 00
+
+OFFSET TO Face
+
+03 00 00 00
+
+OFFSET TO FACE MODEL FILENAME STRING (as it's found in the STRG section, example: YKA_F.MT3)
+```
+
 ## MAPINFO.BIN Editor View
 ```
 Offset(h) 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
