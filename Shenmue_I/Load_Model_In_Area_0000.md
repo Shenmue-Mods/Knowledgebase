@@ -6,14 +6,14 @@ This is a modified data of the `MAPINFO.BIN` of `SCENE/01/0000`.
 ```
 As an example, it loads the model of Nozomi's Harasaki (HRSK) into the scene.
 The model/NPC that has been loaded/spawned, it is not interactable.
-For more information on MAPINFO's data, read "[Analysis of a simple MAPINFO](Shenmue_I/Analysis_of_a_simple_MAPINFO.md)".
+For more information on MAPINFO's data, read "[Analysis of a simple MAPINFO](Analysis_of_a_simple_MAPINFO.md)".
 
 How to load (almost) any other character/model (using the modified data of the MAPINFO):
 - Change (the 1 reference of) HRSK to the ID of the Character you want to load.
 - Change (the 2 references of) NZM_M to the Model Name of that Character.
 - Change (the 1 reference of) NZM_F accordingly. The "_F" part means this is a reference for what Face to load.
 
-Reference: ["Characters Names/IDs/Models"](Shenmue_I/Characters_Names_IDs_Models.md)
+Reference: ["Characters Names/IDs/Models"](Characters_Names_IDs_Models.md)
 
 ## MAPINFO.BIN Editor View
 ```
