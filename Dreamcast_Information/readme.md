@@ -2,6 +2,7 @@
 
 ## Contents
 
+* [Create Bootable CDIs](Create_Bootable_CDIs.md)
 * [PVR Graphic Format](PVR_Graphic_Format.md)
 * [SPSD files](SPSD_files.md)
 
