@@ -21,7 +21,7 @@
 
 6. Download [BootDreams](https://code.google.com/archive/p/bootdreams/downloads) and install it.
 
-7. Run BootDreams:
+7. Run *BootDreams*:
 
     7.1. Click the *Browse* button and select the folder with the extracted/modified files.
     
