@@ -15,6 +15,7 @@
 * [Fusing Maps Together](Fusing_Maps_Together.md)
 * [Increase the size of the Loading Screen area names](Increase_the_size_of_the_Loading_Screen_area_names.md)
 * [Load Model In Area 0000](Load_Model_In_Area_0000.md)
+* [Make Beta Areas Playable](Make_Beta_Areas_Playable.md)
 * [Map Names/IDs](Map_Names_IDs.md)
 * [Notebook Hacking](Notebook_Hacking.md)
 * [Remove Collision Data From Maps without COLI in MAPINFO](Remove_Collision_Data_From_Maps_without_COLI_in_MAPINFO.md)
