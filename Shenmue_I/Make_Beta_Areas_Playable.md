@@ -3,7 +3,7 @@
 As an example, we will take the case of Sakuragaoka's Beta Area, which its data is found in `SCENE\01\JD99`.
 We will also make the assumption, that you have the data of the retail version of `Shenmue I` (and not the BETA 0.400 version).
 
-We will modify the contents of Sakuragaoka's final-version Area, which is found in `SCENE\01\JD00`.
+We will modify the contents of Sakuragaoka's Final-Version Area, which is found in `SCENE\01\JD00`.
 
 ### Steps
 
@@ -31,3 +31,13 @@ them some place else, instead of deleting).
     6.3. Save (Ctrl+S).
 
 7. Proceed to [Create a Bootable CDI](Dreamcast_Information/Create_Bootable_CDIs.md).
+
+***
+
+The general idea is this:
+ - You need a folder/directory with the files of the Beta Area (in this case `JD99`'s).
+ 
+ - In that folder, you need a `MAPINFO.BIN` which is comprised of this data:
+ 
+   1. The *pre-ECAM* data of the Final-Version Area's `MAPINFO` (in this case `JD00`'s).
+   2. And, immediately after that data, the *post-ECAM* (including `ECAM`) data of the Beta Area's `MAPINFO` (in this case `JD99`'s).
