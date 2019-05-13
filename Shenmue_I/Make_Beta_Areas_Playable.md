@@ -30,7 +30,7 @@ them some place else, instead of deleting).
     
     6.3. Save (Ctrl+S).
 
-7. Proceed to [Create a Bootable CDI](Dreamcast_Information/Create_Bootable_CDIs.md).
+7. Proceed to [Create a Bootable CDI](/Dreamcast_Information/Create_Bootable_CDIs.md).
 
 ***
 
